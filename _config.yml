@@ -15,21 +15,20 @@ timezone: Africa/El_Aaiun
 
 title: C1ph3r1st's InfoSec Blog # the main title
 
-tagline: InfoSec one byte at a time  # it will display as the sub-title
+tagline: InfoSec one byte at a time # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-
-Join me on the journey of continuous learning and the pursuit of cybersecurity expertise
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://rednapm.github.io"
 
 github:
-  username: rednapm # change to your github username
+  username: github_username # change to your github username
 
 twitter:
-  username: C1ph3r1st # change to your twitter username
+  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
