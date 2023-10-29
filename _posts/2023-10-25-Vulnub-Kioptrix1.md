@@ -4,14 +4,15 @@ title: Vulnhub Kioptrix 1 Walkthrough
 categories: [Vulnhub]
 tags: [ linux]
 toc: true
-
+image:
+  path: "/assets/images/kioptrix1/vuln.png"
+  alt: Vulnhub Kioptrix1
 ---
 
-![http80](/assets/images/kioptrix1/vuln.png)
 
 Kioptrix 1 was an easy box to root , using kernel exploit and getting foothold by abusing an old mod ssl 
 
-## Reconnaissance
+## Recon
 
 nmap scan show 5 ports open : 
 
