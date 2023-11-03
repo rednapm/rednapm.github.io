@@ -1,5 +1,11 @@
 ---
 title: Vulnhub Kioptrix2 Walkthrough
+categories:
+- Vulnhub
+tags: []
+image:
+  path: "/assets/images/kioptrix2/kio2.png"
+  alt: Kioptrix2
 ---
 
 # Recon
@@ -43,7 +49,7 @@ Navigating to port 80 we see a login panel , my first hunch is to bypass the aut
 Throwing a simple payload like `admin ' and 1=1 -- -` lead us to bypass the authetication and land on an Administrative Web Console where you can use ping command .
 
 
-# Remote Code Execution
+### Remote Code Execution
 Seeing the ping command , our first try is to see if we can abuse that fonctionnality to run other commands by appending it to `ping` .
 
 by typing this in the box : `127.0.0.1;id`
@@ -80,7 +86,7 @@ rtt min/avg/max/mdev = 0.041/0.049/0.064/0.013 ms, pipe 2
 uid=48(apache) gid=48(apache) groups=48(apache)
 
 ```
-# Shell as Apache 
+## Shell as Apache 
 
 we run our last `curl `command but this time i use a reverse shell instead of `id` command 
 
@@ -117,7 +123,7 @@ stty columns 200 rows 116
 
 ```
 
-# Privesc 
+## Privesc 
 We will use a kernel exploit to privesc to `root` , because other methods to privesc didn't yields any results 
 
 we use those three commands to get the kernel and exact OS version : it's a `Centos 4.5` with `kernel 2.6.9-55 ` linux
