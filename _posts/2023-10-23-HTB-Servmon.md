@@ -3,6 +3,7 @@ title: HTB Servmon Walkthrough
 image:
   path: "/assets/images/servmon/servmon.jpeg"
   alt: HTB  SERVMON
+categories: [HTB] 
 ---
 
 ## Box Summary
